@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/slyguard.github.io/precache-manifest.38f175af1d9b8e0855e625b61427e90b.js"
+  "/slyguard.github.io/precache-manifest.e29e95101dd77b8b1263364d21bf0429.js"
 );
 
 self.addEventListener('message', (event) => {
