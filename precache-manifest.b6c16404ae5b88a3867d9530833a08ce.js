@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bf8d21d501f3a68ebfcba454688fb38",
+    "revision": "e654e8b33e981105bb4503b88b7940f3",
     "url": "/slyguard.github.io/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/slyguard.github.io/static/css/10.1f4b37e1.chunk.css"
   },
   {
-    "revision": "e47de9607ddd70cb5012",
-    "url": "/slyguard.github.io/static/css/main.35edab5c.chunk.css"
+    "revision": "7065519618c6c2042a6b",
+    "url": "/slyguard.github.io/static/css/main.389e72cd.chunk.css"
   },
   {
     "revision": "acafe2cc873e3b515c11",
@@ -408,7 +408,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/slyguard.github.io/static/js/99.e83add20.chunk.js"
   },
   {
-    "revision": "e47de9607ddd70cb5012",
+    "revision": "7065519618c6c2042a6b",
     "url": "/slyguard.github.io/static/js/main.8d1ab631.chunk.js"
   },
   {
