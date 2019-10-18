@@ -9,10 +9,10 @@
     "static/js/6.2de9ed41.chunk.js": "/slyguard.github.io/static/js/6.2de9ed41.chunk.js",
     "static/js/7.e2c80691.chunk.js": "/slyguard.github.io/static/js/7.e2c80691.chunk.js",
     "main.css": "/slyguard.github.io/static/css/main.5d6f9023.chunk.css",
-    "main.js": "/slyguard.github.io/static/js/main.bde7e3aa.chunk.js",
+    "main.js": "/slyguard.github.io/static/js/main.5a83a196.chunk.js",
     "runtime-main.js": "/slyguard.github.io/static/js/runtime-main.e4c437e5.js",
     "static/css/10.af5addaf.chunk.css": "/slyguard.github.io/static/css/10.af5addaf.chunk.css",
-    "static/js/10.51119617.chunk.js": "/slyguard.github.io/static/js/10.51119617.chunk.js",
+    "static/js/10.40679b4d.chunk.js": "/slyguard.github.io/static/js/10.40679b4d.chunk.js",
     "static/js/11.9f8619e1.chunk.js": "/slyguard.github.io/static/js/11.9f8619e1.chunk.js",
     "static/js/12.cc7ce78f.chunk.js": "/slyguard.github.io/static/js/12.cc7ce78f.chunk.js",
     "static/js/13.f1bbc3fd.chunk.js": "/slyguard.github.io/static/js/13.f1bbc3fd.chunk.js",
@@ -103,7 +103,7 @@
     "static/js/98.fa49b54f.chunk.js": "/slyguard.github.io/static/js/98.fa49b54f.chunk.js",
     "static/js/99.b91aae92.chunk.js": "/slyguard.github.io/static/js/99.b91aae92.chunk.js",
     "index.html": "/slyguard.github.io/index.html",
-    "precache-manifest.c8e0a85f2f1251b0722e616450450739.js": "/slyguard.github.io/precache-manifest.c8e0a85f2f1251b0722e616450450739.js",
+    "precache-manifest.1851a5c0e868377cff6bdcba9fed32b0.js": "/slyguard.github.io/precache-manifest.1851a5c0e868377cff6bdcba9fed32b0.js",
     "service-worker.js": "/slyguard.github.io/service-worker.js",
     "static/media/ios-add-circle-outline.svg": "/slyguard.github.io/static/media/ios-add-circle-outline.e3a9f2f6.svg",
     "static/media/ios-add-circle.svg": "/slyguard.github.io/static/media/ios-add-circle.25f2a81b.svg",
@@ -805,8 +805,8 @@
   "entrypoints": [
     "static/js/runtime-main.e4c437e5.js",
     "static/css/10.af5addaf.chunk.css",
-    "static/js/10.51119617.chunk.js",
+    "static/js/10.40679b4d.chunk.js",
     "static/css/main.5d6f9023.chunk.css",
-    "static/js/main.bde7e3aa.chunk.js"
+    "static/js/main.5a83a196.chunk.js"
   ]
 }
