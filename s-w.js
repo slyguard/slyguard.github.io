@@ -33,13 +33,7 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
-        fetch(event.request)
-          .catch(function() {
-            return response;
-          })
-          .then(function(res) {
-            return res;
-          });
+        return response;
       } else {
         return fetch(event.request).then(function(res) {
           return caches.open('dynamic').then(function(cache) {
