@@ -2,7 +2,7 @@
   "short_name": "Sly Guard",
   "name": "Sly Guard",
   "description": "Private Protection Services",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#000000",
