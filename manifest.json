@@ -2,7 +2,7 @@
   "short_name": "Sly Guard",
   "name": "Sly Guard",
   "description": "Private Protection Services",
-  "scope": ".",
+  "scope": "./",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
