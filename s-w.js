@@ -1,10 +1,11 @@
+importScripts('service-worker.js');
 self.addEventListener('install', function(event) {
-  console.log('[Service Worker] Installing Service Worker ...', event);
-  event.waitUntil(
-    caches.open('static').then(function(cache) {
-      cache.addAll(['/', '/static', '/index.html', '/manifest.json']);
-    })
-  );
+  // console.log('[Service Worker] Installing Service Worker ...', event);
+  // event.waitUntil(
+  //   caches.open('static').then(function(cache) {
+  //     cache.addAll(['/', '/static', '/index.html', '/manifest.json']);
+  //   })
+  // );
 });
 
 self.addEventListener('activate', event => {
