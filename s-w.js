@@ -6,6 +6,7 @@ self.addEventListener('install', function(event) {
     })
   );
 });
+navigator.serviceWorker.register('static/service-worker.js', { scope: '/' });
 
 // self.addEventListener('activate', function(event) {
 //   console.log('[Service Worker] Activating Service Worker ....', event);
