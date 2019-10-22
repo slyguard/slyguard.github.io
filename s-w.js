@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
     caches.open('static').then(function(cache) {
-      cache.addAll(['/', '/s-w.js', '/index.html', '/manifest.json']);
+      cache.addAll(['/', '/index.html', '/manifest.json']);
     })
   );
 });
@@ -33,7 +33,10 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
-        return response;
+        fetch(event.request).catch(function() {
+          return caches.match(event.request);
+        });
+        // return response;
       } else {
         return fetch(event.request).then(function(res) {
           return caches.open('dynamic').then(function(cache) {
