@@ -9,7 +9,7 @@
     "static/js/6.236b26f9.chunk.js": "/slyguard.github.io/static/js/6.236b26f9.chunk.js",
     "static/js/7.530c7ad0.chunk.js": "/slyguard.github.io/static/js/7.530c7ad0.chunk.js",
     "main.css": "/slyguard.github.io/static/css/main.5d6f9023.chunk.css",
-    "main.js": "/slyguard.github.io/static/js/main.8ee1fe62.chunk.js",
+    "main.js": "/slyguard.github.io/static/js/main.55a3e268.chunk.js",
     "runtime-main.js": "/slyguard.github.io/static/js/runtime-main.f3a240f5.js",
     "static/css/10.04e710e5.chunk.css": "/slyguard.github.io/static/css/10.04e710e5.chunk.css",
     "static/js/10.282b274c.chunk.js": "/slyguard.github.io/static/js/10.282b274c.chunk.js",
@@ -103,7 +103,7 @@
     "static/js/98.694034de.chunk.js": "/slyguard.github.io/static/js/98.694034de.chunk.js",
     "static/js/99.03cd4165.chunk.js": "/slyguard.github.io/static/js/99.03cd4165.chunk.js",
     "index.html": "/slyguard.github.io/index.html",
-    "precache-manifest.940d675838baa3042c3e9cce965e0aad.js": "/slyguard.github.io/precache-manifest.940d675838baa3042c3e9cce965e0aad.js",
+    "precache-manifest.573bf59ee35e0e92c931d41763ae769e.js": "/slyguard.github.io/precache-manifest.573bf59ee35e0e92c931d41763ae769e.js",
     "service-worker.js": "/slyguard.github.io/service-worker.js",
     "static/media/ios-add-circle-outline.svg": "/slyguard.github.io/static/media/ios-add-circle-outline.e3a9f2f6.svg",
     "static/media/ios-add-circle.svg": "/slyguard.github.io/static/media/ios-add-circle.25f2a81b.svg",
@@ -807,6 +807,6 @@
     "static/css/10.04e710e5.chunk.css",
     "static/js/10.282b274c.chunk.js",
     "static/css/main.5d6f9023.chunk.css",
-    "static/js/main.8ee1fe62.chunk.js"
+    "static/js/main.55a3e268.chunk.js"
   ]
 }
