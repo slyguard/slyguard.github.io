@@ -7,10 +7,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-// self.addEventListener('activate', function(event) {
-//   console.log('[Service Worker] Activating Service Worker ....', event);
-// });
-
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
@@ -34,9 +30,8 @@ self.addEventListener('fetch', function(event) {
     caches.match(event.request).then(function(response) {
       if (response) {
         fetch(event.request).catch(function() {
-          return caches.match(event.request);
+          return response;
         });
-        // return response;
       } else {
         return fetch(event.request).then(function(res) {
           return caches.open('dynamic').then(function(cache) {
