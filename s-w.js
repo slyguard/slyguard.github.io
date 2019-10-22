@@ -31,16 +31,18 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(async function(response) {
+    caches.match(event.request).then(function(response) {
       if (response) {
         fetch(event.request).catch(function() {
           return response;
         });
       } else {
-        const res = await fetch(event.request);
-        const cache = await caches.open('dynamic');
-        cache.put(event.request.url, res.clone());
-        return res;
+        return fetch(event.request).then(function(res) {
+          return caches.open('dynamic').then(function(cache) {
+            cache.put(event.request.url, res.clone());
+            return res;
+          });
+        });
       }
     })
   );
