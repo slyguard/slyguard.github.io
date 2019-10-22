@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c3bdb24d290c4edf6e13666184162a2",
+    "revision": "9d98295ba27b5f11ef89246b1777433a",
     "url": "/slyguard.github.io/index.html"
   },
   {
