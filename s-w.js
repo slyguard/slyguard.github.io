@@ -26,25 +26,38 @@ self.addEventListener('activate', event => {
   );
 });
 
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     caches.match(event.request).then(function(response) {
+//       if (response) {
+//         fetch(event.request)
+//           .then(function(res) {
+//             return res;
+//           })
+//           .catch(function() {
+//             return response;
+//           });
+//       } else {
+//         return fetch(event.request).then(function(res) {
+//           return caches.open('dynamic').then(function(cache) {
+//             cache.put(event.request.url, res.clone());
+//             return res;
+//           });
+//         });
+//       }
+//     })
+//   );
+// });
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
-      if (response) {
-        fetch(event.request)
-          .then(function(res) {
-            return res;
-          })
-          .catch(function() {
-            return response;
-          });
-      } else {
-        return fetch(event.request).then(function(res) {
-          return caches.open('dynamic').then(function(cache) {
-            cache.put(event.request.url, res.clone());
-            return res;
-          });
+    caches.open('dynamic').then(function(cache) {
+      return cache.match(event.request).then(function(response) {
+        var fetchPromise = fetch(event.request).then(function(networkResponse) {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
         });
-      }
+        return response || fetchPromise;
+      });
     })
   );
 });
