@@ -30,9 +30,9 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
-        // fetch(event.request).catch(function() {
-        return response;
-        // });
+        fetch(event.request).catch(function() {
+          return response;
+        });
       } else {
         return fetch(event.request).then(function(res) {
           return caches.open('dynamic').then(function(cache) {
@@ -44,37 +44,3 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
-
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(
-//     fetch(event.request).catch(function() {
-//       return caches.match(event.request);
-//     })
-//   );
-// });
-
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(
-//     caches.open('dynamic').then(async cache => {
-//       return fetch(event.request)
-//         .then(function(response) {
-//           cache.put(event.request, response.clone());
-//           return response;
-//         })
-//         .catch(function() {
-//           return caches.match(event.request);
-//         });
-//     })
-//   );
-// });
-
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(
-//     caches.open('dynamic').then(function(cache) {
-//       return fetch(event.request).then(function(response) {
-//         cache.put(event.request, response.clone());
-//         return response;
-//       });
-//     })
-//   );
-// });
