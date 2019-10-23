@@ -50,14 +50,13 @@ self.addEventListener('activate', event => {
 // });
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.open('dynamic').then(function(cache) {
-      return cache.match(event.request).then(function(response) {
-        var fetchPromise = fetch(event.request).then(function(networkResponse) {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-        return response || fetchPromise;
+    caches.open('dynamic').then(async function(cache) {
+      const response = await cache.match(event.request);
+      var fetchPromise = fetch(event.request).then(function(networkResponse) {
+        cache.put(event.request, networkResponse.clone());
+        return networkResponse;
       });
+      return response || fetchPromise;
     })
   );
 });
